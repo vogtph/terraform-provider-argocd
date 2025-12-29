@@ -3,7 +3,7 @@ package diagnostics
 import (
 	"fmt"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/features"
+	"github.com/vogtph/terraform-provider-argocd/internal/features"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 )
 

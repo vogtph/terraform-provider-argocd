@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/features"
+	"github.com/vogtph/terraform-provider-argocd/internal/features"
 	"github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 )

@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/provider"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/testhelpers"
+	"github.com/vogtph/terraform-provider-argocd/internal/provider"
+	"github.com/vogtph/terraform-provider-argocd/internal/testhelpers"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/cluster"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-testing/helper/acctest"

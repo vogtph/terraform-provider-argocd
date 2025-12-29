@@ -23,7 +23,7 @@ func TestAccArgoCDRepositoryCredentials(t *testing.T) {
 		Steps: []resource.TestStep{
 			{
 				Config: testAccArgoCDRepositoryCredentialsSimple(
-					"https://github.com/argoproj-labs/terraform-provider-argocd",
+					"https://github.com/vogtph/terraform-provider-argocd",
 				),
 			},
 			{
@@ -177,7 +177,7 @@ func generateSSHPrivateKey() (privateKey string, err error) {
 
 func TestAccArgoCDRepositoryCredentials_UsernamePasswordConsistency(t *testing.T) {
 	config := testAccArgoCDRepositoryCredentialsSimple(
-		"https://github.com/argoproj-labs/terraform-provider-argocd",
+		"https://github.com/vogtph/terraform-provider-argocd",
 	)
 
 	resource.Test(t, resource.TestCase{
@@ -187,14 +187,14 @@ func TestAccArgoCDRepositoryCredentials_UsernamePasswordConsistency(t *testing.T
 			{
 				Config: config,
 				Check: resource.ComposeAggregateTestCheckFunc(
-					resource.TestCheckResourceAttr("argocd_repository_credentials.simple", "url", "https://github.com/argoproj-labs/terraform-provider-argocd"),
+					resource.TestCheckResourceAttr("argocd_repository_credentials.simple", "url", "https://github.com/vogtph/terraform-provider-argocd"),
 				),
 			},
 			{
 				// Apply the same configuration again to test for consistency
 				Config: config,
 				Check: resource.ComposeAggregateTestCheckFunc(
-					resource.TestCheckResourceAttr("argocd_repository_credentials.simple", "url", "https://github.com/argoproj-labs/terraform-provider-argocd"),
+					resource.TestCheckResourceAttr("argocd_repository_credentials.simple", "url", "https://github.com/vogtph/terraform-provider-argocd"),
 				),
 			},
 		},

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/testhelpers"
+	"github.com/vogtph/terraform-provider-argocd/internal/testhelpers"
 	"github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/stretchr/testify/assert"

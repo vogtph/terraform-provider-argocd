@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/features"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/provider"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/testhelpers"
+	"github.com/vogtph/terraform-provider-argocd/internal/features"
+	"github.com/vogtph/terraform-provider-argocd/internal/provider"
+	"github.com/vogtph/terraform-provider-argocd/internal/testhelpers"
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6"
 	"github.com/hashicorp/terraform-plugin-mux/tf5to6server"

@@ -8,7 +8,7 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/features"
+	"github.com/vogtph/terraform-provider-argocd/internal/features"
 	applicationClient "github.com/argoproj/argo-cd/v3/pkg/apiclient/application"
 	application "github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1"
 	"github.com/argoproj/gitops-engine/pkg/health"

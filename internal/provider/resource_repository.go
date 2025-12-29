@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/diagnostics"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/sync"
+	"github.com/vogtph/terraform-provider-argocd/internal/diagnostics"
+	"github.com/vogtph/terraform-provider-argocd/internal/sync"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/repository"
 	"github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1"
 	"github.com/hashicorp/terraform-plugin-framework/diag"

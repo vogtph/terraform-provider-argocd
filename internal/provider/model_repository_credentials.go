@@ -3,7 +3,7 @@ package provider
 import (
 	"strconv"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/validators"
+	"github.com/vogtph/terraform-provider-argocd/internal/validators"
 	"github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/booldefault"

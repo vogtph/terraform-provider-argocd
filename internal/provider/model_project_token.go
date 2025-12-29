@@ -1,7 +1,7 @@
 package provider
 
 import (
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/validators"
+	"github.com/vogtph/terraform-provider-argocd/internal/validators"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/planmodifier"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/stringplanmodifier"

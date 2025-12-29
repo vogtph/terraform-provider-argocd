@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/diagnostics"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/sync"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/validators"
+	"github.com/vogtph/terraform-provider-argocd/internal/diagnostics"
+	"github.com/vogtph/terraform-provider-argocd/internal/sync"
+	"github.com/vogtph/terraform-provider-argocd/internal/validators"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/certificate"
 	"github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
