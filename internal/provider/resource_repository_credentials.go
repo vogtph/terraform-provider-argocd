@@ -123,6 +123,8 @@ func (r *repositoryCredentialsResource) Create(ctx context.Context, req resource
 		result.Username = types.StringValue(createdCreds.Username)
 	}
 
+	result.UseAzureWorkloadIdentity = types.BoolValue(createdCreds.UseAzureWorkloadIdentity)
+	result.EnableOCI = types.BoolValue(createdCreds.EnableOCI)
 	// Handle EnableOCI - preserve planned value if API doesn't return it
 	// ArgoCD API doesn't reliably return enableOCI field, so we trust the planned value
 	// Only overwrite if API explicitly returns true
@@ -203,6 +205,8 @@ func (r *repositoryCredentialsResource) Read(ctx context.Context, req resource.R
 		result.Username = types.StringValue(creds.Username)
 	}
 
+	result.UseAzureWorkloadIdentity = types.BoolValue(creds.UseAzureWorkloadIdentity)
+	result.EnableOCI = types.BoolValue(creds.EnableOCI)
 	// Handle EnableOCI - preserve prior state value if API doesn't return it
 	// ArgoCD API doesn't reliably return enableOCI field, so we trust the prior state value
 	// Only overwrite if API explicitly returns true
@@ -293,6 +297,8 @@ func (r *repositoryCredentialsResource) Update(ctx context.Context, req resource
 		result.Username = types.StringValue(updatedCreds.Username)
 	}
 
+	result.UseAzureWorkloadIdentity = types.BoolValue(updatedCreds.UseAzureWorkloadIdentity)
+	result.EnableOCI = types.BoolValue(updatedCreds.EnableOCI)
 	// Handle EnableOCI - preserve planned value if API doesn't return it
 	// ArgoCD API doesn't reliably return enableOCI field, so we trust the planned value
 	// Only overwrite if API explicitly returns true
