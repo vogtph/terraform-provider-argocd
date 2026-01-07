@@ -8,8 +8,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/diagnostics"
-	argocdSync "github.com/argoproj-labs/terraform-provider-argocd/internal/sync"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/project"
 	"github.com/cristalhq/jwt/v5"
 	"github.com/hashicorp/terraform-plugin-framework/path"
@@ -17,6 +15,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
+	"github.com/vogtph/terraform-provider-argocd/internal/diagnostics"
+	argocdSync "github.com/vogtph/terraform-provider-argocd/internal/sync"
 )
 
 // Ensure provider defined types fully satisfy framework interfaces.

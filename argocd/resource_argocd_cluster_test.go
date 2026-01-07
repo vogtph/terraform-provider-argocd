@@ -10,13 +10,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/provider"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/testhelpers"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/cluster"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
+	"github.com/vogtph/terraform-provider-argocd/internal/provider"
+	"github.com/vogtph/terraform-provider-argocd/internal/testhelpers"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
@@ -328,7 +328,7 @@ func TestAccArgoCDCluster_outsideDeletion(t *testing.T) {
 			{
 				PreConfig: func() {
 					// delete cluster and validate refresh generates a plan
-					// (non-regression test for https://github.com/oboukili/terraform-provider-argocd/issues/266)
+					// (non-regression test for https://github.com/vogtph/terraform-provider-argocd/issues/266)
 					si, err := getServerInterface()
 					if err != nil {
 						t.Error(fmt.Errorf("failed to get server interface: %s", err.Error()))

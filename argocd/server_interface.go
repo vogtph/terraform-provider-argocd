@@ -8,8 +8,6 @@ import (
 	"sync"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/diagnostics"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/features"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/account"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/application"
@@ -26,6 +24,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
+	"github.com/vogtph/terraform-provider-argocd/internal/diagnostics"
+	"github.com/vogtph/terraform-provider-argocd/internal/features"
 	"google.golang.org/protobuf/types/known/emptypb"
 	"k8s.io/apimachinery/pkg/util/runtime"
 )

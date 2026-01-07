@@ -6,9 +6,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/diagnostics"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/features"
-	argocdSync "github.com/argoproj-labs/terraform-provider-argocd/internal/sync"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/project"
 	"github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
@@ -16,6 +13,9 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
+	"github.com/vogtph/terraform-provider-argocd/internal/diagnostics"
+	"github.com/vogtph/terraform-provider-argocd/internal/features"
+	argocdSync "github.com/vogtph/terraform-provider-argocd/internal/sync"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

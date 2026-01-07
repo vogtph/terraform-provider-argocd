@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/features"
 	application "github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/vogtph/terraform-provider-argocd/internal/features"
 	meta "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/features"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/version"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/vogtph/terraform-provider-argocd/internal/features"
 )
 
 const (

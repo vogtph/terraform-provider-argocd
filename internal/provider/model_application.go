@@ -1,8 +1,6 @@
 package provider
 
 import (
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/utils"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/validators"
 	"github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1"
 	"github.com/elliotchance/pie/v2"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema"
@@ -10,6 +8,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
+	"github.com/vogtph/terraform-provider-argocd/internal/utils"
+	"github.com/vogtph/terraform-provider-argocd/internal/validators"
 )
 
 type applicationModel struct {

@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/diagnostics"
-	"github.com/argoproj-labs/terraform-provider-argocd/internal/sync"
 	"github.com/argoproj/argo-cd/v3/pkg/apiclient/gpgkey"
 	"github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
@@ -14,6 +12,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
+	"github.com/vogtph/terraform-provider-argocd/internal/diagnostics"
+	"github.com/vogtph/terraform-provider-argocd/internal/sync"
 )
 
 // Ensure provider defined types fully satisfy framework interfaces.
