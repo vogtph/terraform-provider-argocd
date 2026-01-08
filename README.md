@@ -173,7 +173,7 @@ HashiCorps [replace-provider] docs. In summary, you can do the following:
 ## Credits
 
 * We would like to thank [Olivier Boukili] for creating this awesome Terraform provider and moving the project over to
-  [vogtph] on Apr 5th 2024.
+  [argoproj-labs on Apr 5th 2024.
 
 [vogtph]: https://github.com/vogtph
 [Olivier Boukili]: https://github.com/oboukili
